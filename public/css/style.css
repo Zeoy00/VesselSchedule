@@ -1,0 +1,416 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.card {
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.preview-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.preview-pdf {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+.loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.loading.active {
+    display: block;
+}
+
+.btn-action {
+    margin-right: 5px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-group .btn-action {
+    margin-right: 0;
+}
+
+.admin-table th.col-9 {
+    width: 75%;
+}
+
+.admin-table th.col-3 {
+    width: 25%;
+}
+
+.admin-table td:first-child {
+    width: 75%;
+}
+
+.admin-table td:last-child {
+    width: 25%;
+    min-width: 200px;
+}
+
+.table td:last-child {
+    min-width: 200px;
+}
+
+.upload-progress {
+    display: none;
+    margin-top: 10px;
+}
+
+.upload-progress.active {
+    display: block;
+}
+
+/* Header Styles */
+.header {
+    position: relative;
+    width: 100%;
+    background-image: url('/images/main-slide-map.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+/* Admin Header Styles */
+.admin-header {
+    position: relative;
+    width: 100%;
+    background-color: #f8f9fa;
+    min-height: 100px;
+}
+
+.top-bar {
+    background-color: #FFFFFF;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+.language-selector {
+    max-width: 120px;
+}
+
+.language-selector .form-select {
+    border: 1px solid #001E42;
+    color: #001E42;
+    font-size: 14px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.language-selector .form-select:focus {
+    border-color: #001E42;
+    box-shadow: 0 0 0 0.2rem rgba(0, 30, 66, 0.25);
+}
+
+.contact-info {
+    color: #001E42;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main-header {
+    padding: 15px 0;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    max-height: 30px;
+    width: auto;
+}
+
+.main-nav .nav-link {
+    color: #001E42;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.main-nav .nav-link.active {
+    color: #001E42;
+}
+
+.hero-section {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #001E42;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 44.8px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Schedule Section Styles */
+.schedule-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.schedule-section h2 {
+    color: #001E42;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.schedule-image {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.schedule-image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #F3F3F3;
+    color: #001E42;
+    padding: 60px 0 30px;
+}
+
+.footer-logo {
+    max-height: 30px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #001E42;
+    margin-bottom: 0;
+}
+
+.footer h4 {
+    color: #001E42;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer h4.wechat {
+    font-size: 14px;
+}
+
+.qr-code {
+    width: 254.01px;
+    height: 254.01px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.footer .contact-info {
+    color: #001E42;
+}
+
+.footer .contact-info p {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.footer .contact-info p.phone {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer .contact-info p.email {
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        min-height: 400px;
+    }
+
+    .hero-section {
+        height: 300px;
+        margin-top: 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-logo,
+    .qr-code {
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        min-height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .schedule-section {
+        padding: 40px 0;
+    }
+}
+
+/* 船期管理表格列宽 */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+    width: 25%;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+    width: 25%;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+    width: 25%;
+}
+
+.table th:nth-child(4),
+.table td:nth-child(4) {
+    width: 25%;
+}
+
+/* 管理员管理表格列宽 */
+.admin-table th.col-9,
+.admin-table td.col-9 {
+    width: 75%;
+}
+
+.admin-table th.col-3,
+.admin-table td.col-3 {
+    width: 25%;
+}
+
+.admin-table .btn-group {
+    display: flex;
+    gap: 5px;
+}
+
+.admin-table .btn-action {
+    margin-right: 0;
+}
+
+/* 表格样式 */
+.table th,
+.table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table td:last-child {
+    white-space: normal;
+}
+
+/* Admin Section Styles */
+.admin-section {
+    margin-top: 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* 分页器样式 */
+.pagination {
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    background-color: #001E42;
+    border-color: #001E42;
+}
+
+.page-link {
+    color: #001E42;
+}
+
+.page-link:hover {
+    color: #001E42;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.search-box {
+    width: 300px;
+}
+
+.search-box input {
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.search-box input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: #80bdff;
+} 

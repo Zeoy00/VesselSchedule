@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RusTrans - 俄罗斯远东航运</title>
+    <link href="/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="main-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img src="/images/FESCO.jpg" alt="FESCO Logo" class="logo">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <nav class="main-nav">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">船舶班期</a>
+                                    </li>
+                                    <li class="nav-item admin-nav" style="display: none;">
+                                        <a class="nav-link" href="/admin.html">船期管理</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="d-flex align-items-center">
+                                <span class="contact-info me-4">+8621 6595 7600</span>
+                                <button type="button" class="btn btn-outline-primary" id="loginButton" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                    管理员登录
+                                </button>
+                                <button type="button" class="btn btn-outline-danger" id="logoutButton" style="display: none;">退出登录</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>为欧亚大陆运送未来</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section">
+        <div class="container">
+            <h2 class="text-center mb-4">船期查询</h2>
+            <div class="schedule-image">
+                <img src="/uploads/1742892531241-schedule.png" alt="Ship Schedule" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="/images/FESCO.jpg" alt="FESCO Logo" class="footer-logo">
+                    <p class="copyright">© 2006-2025 年俄远东船务（上海）有限公司©版权所有 隐私政策</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="wechat">扫码添加FESCO中国官方微信号</h4>
+                    <img src="/images/wecome-qr-code.jpg" alt="微信号二维码" class="qr-code">
+                </div>
+                <div class="col-md-3">
+                    <h4>关注FESCO中国官方微信公众号</h4>
+                    <img src="/images/qr-code.png" alt="公众号二维码" class="qr-code">
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-info">
+                        <p class="phone">+8621 6595 7600</p>
+                        <p class="email">flc-sale@fesco.com</p>
+                        <p>上海市虹口区东大名路908号金岸大厦8F</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 登录模态框 -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">管理员登录</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">用户名</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">密码</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="loginButton">登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 预览模态框 -->
+    <div class="modal fade" id="previewModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">预览船期表</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="previewContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html> 
